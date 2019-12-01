@@ -1,0 +1,144 @@
+/*@media (min-width: 1200px) and (max-width: 1500px) {
+	
+}*/
+@media (min-width: 800px) and (max-width: 1199px) {
+	.our-team__members {
+		display: flex;
+		align-items: flex-start;
+  		flex-wrap: wrap;
+  		margin-top: 1rem;
+	}
+	.container{
+		width: 90%;
+	}
+}
+@media (min-width: 400px) and (max-width: 799px) {
+	.container{
+		width: 95%;
+	}
+
+	.top-header__menu{
+		width: 75%;
+	}
+
+	.snippets{
+		display: flex;
+		align-items: flex-start;
+  		flex-wrap: wrap;
+	}
+	.snippets__box{
+		width: 40%;
+	}    
+	
+	.portfolio{
+		display: flex;
+		flex-direction: column;
+	}
+	.our-team{
+		text-align: center;
+	}
+	.our-team__members {
+		display: flex;
+		align-items: flex-start;
+  		flex-wrap: wrap;
+  		margin-top: 1rem;
+
+	}
+}
+
+/*выпадающее меню. не суди строго - на быструю руку делано*/
+@media (min-width: 260px) and (max-width: 540px) {
+	.top-header__menu{
+		display: none;
+	}
+	.dropdown-menu{
+		display: block;
+		width: 50%;
+	}
+	.dropdown-menu ul{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+	.dropdown-menu a{
+		text-decoration: none;
+		color: #263742;
+		font-family: $regular-font;
+		font-weight: 400;
+		font-size: 0.875rem;
+	}
+	.dropdown-menu a:hover{
+		color: #ffffff;
+	}
+	.dropdown-menu ul ul{
+		display: none;
+		position: absolute;
+		background-color: #fa5c65;
+		border-radius: 1rem;
+
+	}
+	.dropdown-menu li:hover ul{
+		display: block;
+	}
+	.dropdown-menu li:hover li{
+		display: block;
+		padding: .5rem;
+
+	}
+	.social-icons{
+		width: 30%;
+	}
+}
+
+@media (min-width: 260px) and (max-width: 399px) {
+	html{
+		font-size: 0.8em
+	}
+
+	.container{
+		width: 95%;
+	}
+
+	.snippets{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.snippets__box{
+		width: 80%;
+	}    
+	
+	.portfolio{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+
+	}
+	.our-team{
+		text-align: center;
+	}
+	.our-team__members {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+  		margin-top: 1rem;
+
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.social-icons{
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+	}
+}
+
+

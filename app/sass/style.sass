@@ -1,0 +1,220 @@
+// @import"../../node_modules/normalize.css/normalize";
+
+$bold-font: 'Montserrat Bold', sans-serif
+$regular-font: 'Montserrat Regular', sans-serif
+$sans-font: 'Open Sans', sans-serif
+// $inlineflex: 
+//     display: flex
+// 	justify-content: flex-start
+
+
+html
+	box-sizing: border-box
+	font-size: 1em
+
+body
+	margin: 0 auto
+	padding: 0
+	max-width: 1370px
+	font-family: 'Montserrat', sans-serif
+    font-family: 'Open Sans', sans-serif
+
+header
+	width: 100%
+	background: url(../img/background.png) no-repeat center
+	min-height: 66rem
+	background-size: cover
+    position: relative
+
+.container
+	width: 68%
+	margin: 0 auto
+	padding: 0
+	
+.top
+	display:flex
+	flex-direction:column
+	justify-content:space-between
+	min-height: 4.375rem
+	font: $regular-font 
+
+
+.top-header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	color: #263742
+
+	&__menu
+		width: 50%
+
+	&__menu ul
+		display: flex
+		justify-content: space-between
+		align-items: center
+		list-style: none
+	&__menu a
+		text-decoration: none
+		color: #263742
+		font-family: $regular-font
+		font-weight: 400
+		font-size: 0.875rem
+	&__menu a:hover
+		color: #fa5c65
+
+.dropdown-menu
+	display: none
+
+.top-content
+	width: 60%
+	margin-top: 17rem
+	color: #314a5b
+
+	&__title
+		font-family: $bold-font
+		font-size: 3rem
+		margin-bottom: 0px
+
+	&__text
+		font-family: $sans-font
+		font-size: 1.25rem	
+
+	&__button
+		background-color: #fa5c65
+		padding: .8rem 1.4rem
+		border: none
+		border-radius: .35rem
+		font-family: $sans-font
+		font-weight: 700
+		font-size: 0.937rem
+		color: #ffffff
+		margin-top: 1.4rem
+
+.snippets
+	display: flex
+	justify-content: flex-start
+	
+
+	&__box
+		width: 29%
+		margin-right: 2rem
+		
+  //   &__box-title       <-----не наследуется. не понимаю причину...
+  //   	color: #465065
+  //   	font-family: 'Montserrat', sans-serif
+		// font-weight: 700
+		// font-size: 1.625rem
+		// border: solid 2px red
+
+
+	&__box-text
+		font-family: $sans-font
+		font-weight: 400
+		font-size: 0.937rem
+		color: #b8bcc3
+
+.snippets__box-title
+    color: #465065
+    font-family: 'Montserrat', sans-serif
+    font-weight: 700
+    font-size: 1.625rem
+    height: 6.25rem
+    padding: 0
+    
+.more a
+	text-decoration: none
+	font-family: $regular-font
+	font-weight: 400
+	font-size: 0.875rem
+	color: #f25e64
+	
+.more a:hover
+		color: #314a5b
+
+.portfolio
+	display: flex
+	justify-content: flex-start
+
+	&__macbook-box img
+		max-width: 25.375rem
+
+	&__text-box
+		font-family: $sans-font
+		font-weight: 400
+		font-size: 0.937rem
+		color: #b8bcc3
+
+		&_title
+			color: #314a5b
+			font-size: 2.5rem
+			font-family: $bold-font
+			font-weight: 700
+			line-height: .8rem
+			padding-top: 2rem
+			
+			&_slogan
+				font-family: $sans-font
+				font-weight: 400
+				font-size: 1rem
+
+.our-team__title
+	color: #314a5b
+	font-size: 2rem
+	font-family: $bold-font
+	font-weight: 700
+	line-height: .6rem
+
+	&_small-note
+		font-family: $sans-font
+		font-weight: 400
+		font-size: 1rem
+		color: #b8bcc3
+
+.our-team__members
+	display: flex
+	justify-content: flex-start
+
+	&_description
+		font-family: $sans-font
+		font-weight: 400
+		font-size: .875rem
+		color: #b8bcc3
+		width: 9.8rem
+		margin: 0 1rem
+		
+		&_title
+			color: #314a5b
+			font-size: 1.375rem
+			font-family: $bold-font
+			font-weight: 700
+			margin-top: -0.8rem
+
+		&_specialty
+			color: #f0454c
+			margin-top: -1.3rem
+
+.bottom-more
+	margin-top: 2.5rem
+	margin-bottom: 3rem
+	display: flex
+	justify-content: flex-end
+	align-items: center
+
+footer
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.social-icons
+	display: flex
+	justify-content: space-between
+	width: 14%
+		
+.copyrihgts
+	font-family: $sans-font
+	font-weight: 400
+	font-size: .8125rem
+	color: #b8bcc3
+.red-dot
+	color: #fa5c65
+	font-family: $sans-font
